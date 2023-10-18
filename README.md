@@ -80,7 +80,7 @@ from source_data
     Uncomment the line below to remove records with null `id` values
 */
 
--- where id is not null
+ where id is not null
 
 ```
 
@@ -91,7 +91,7 @@ from {{ ref('my_first_dbt_model') }}
 where id = 1
 ```
 ### schema yaml file example
-```
+``` yml
 
 version: 2
 
