@@ -224,7 +224,7 @@ select * from read_parquet('yellow_tripdata_2023-01-partial.parquet')
 - Run the project again and verify the error has been fixed.
 - In the terminal, run the command ./datacheck to verify there are 300000 total_rides and look at a sample of the content from the data warehouse.
 
-``` 
+```python
 #!/usr/bin/env python3
 import duckdb
 con = duckdb.connect('dbt.duckdb', read_only=True)
